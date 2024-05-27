@@ -16,9 +16,9 @@ Questo programma implementa un algoritmo di interpolazione a più parametri (fin
 ## Come usare il programma
 
 1. **Compilare il programma:** Utilizzare un compilatore Root / C++ (con librerie root) per compilare il codice sorgente.
-2. **Creare un file di dati:** Creare un file di testo chiamato `dati_da_interpolare.txt` con i dati da interpolare, nel formato descritto sopra (ogni riga x, y, sigma_y distanziati da un tab e con separatore decimale ".").
-3. **Definire la funzione interpolante:** Definire, nell'apposita riga di codice, la funzione interpolante i dati utilizzando come variabile indipendente x[i_esimo_valore], mentre come parametri (in numero necessario non maggiore a 3) par1, par2 e par3.
-4. **Definire il range dei parametri:** Definire, nelle apposite righe di codice, il range di valori in cui devono essere ricercati i parametri (definire numero_punti_iniziali=100 per un impegno computazionale medio).
+2. **Creare un file di dati:** Creare un file di testo chiamato `dati_da_interpolare.txt` con i dati da interpolare, nel formato descritto sopra (ogni riga `x`, `y`, `sigma_y` distanziati da un tab e con separatore decimale un punto `.`).
+3. **Definire la funzione interpolante:** Definire, nell'apposita riga di codice, la funzione interpolante i dati utilizzando come variabile indipendente `x[i_esimo_valore]`, mentre come parametri (in numero necessario non maggiore a 3) `par1`, `par2` e `par3`.
+4. **Definire il range dei parametri:** Definire, nelle apposite righe di codice, il range di valori in cui devono essere ricercati i parametri (definire `numero_punti_iniziali=100` per un impegno computazionale medio).
 5. **Eseguire il programma:** Eseguire il programma compilato.
 
 ## Requisiti
@@ -59,17 +59,17 @@ Questo programma implementa un algoritmo di interpolazione a più parametri (fin
 190	2.841256396	0.024368447<br>
 
 ## Esempio di funzione interpolante i dati
-return M_PI/2 - atan((par1 * par1 - pow(2 * M_PI * x[i_esimo_valore] * 1000, 2)) / (2 * M_PI * x[i_esimo_valore] * 1000 * par2 * 2));
+`return M_PI/2 - atan((par1 * par1 - pow(2 * M_PI * x[i_esimo_valore] * 1000, 2)) / (2 * M_PI * x[i_esimo_valore] * 1000 * par2 * 2));`
 
 ## Esempio range parametri
-double numero_punti_iniziali = 100;                // MODIFICABILE<br>
-double range_min1 = 1050000;                       //<br>
-double range_max1 = 1150000;                       //<br>
-double range_min2 = 20000;                         //<br>
-double range_max2 = 40000;                         //<br>
-double range_min3 = 0;                             //<br>
-double range_max3 = 1;                             //<br>
-double precisione_bisezione = 0.0000001;           //<br>
+double numero_punti_iniziali = 100;                <br>
+double range_min1 = 1050000;                       <br>
+double range_max1 = 1150000;                       <br>
+double range_min2 = 20000;                         <br>
+double range_max2 = 40000;                         <br>
+double range_min3 = 0;                             <br>
+double range_max3 = 1;                             <br>
+double precisione_bisezione = 0.0000001;           <br>
 
 ## Note
 
