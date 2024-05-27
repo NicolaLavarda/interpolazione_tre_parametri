@@ -9,17 +9,17 @@ Questo programma implementa un algoritmo di interpolazione a più parametri (fin
     * `val_y`: valore della variabile dipendente
     * `val_sigma_y`: errore sulla variabile dipendente
 * **Determinazione del numero di parametri:** Il programma identifica automaticamente il numero di parametri necessari per l'interpolazione, analizzando la funzione interpolante.
-* **Ricerca dei parametri:** Il programma utilizza un algoritmo di bisezione per trovare i parametri che minimizzano il chi-quadro.
+* **Ricerca dei parametri:** Il programma utilizza una serie di cicli for e un rapido algoritmo di bisezione per trovare i parametri che minimizzano il chi-quadro.
 * **Calcolo degli errori:** Il programma calcola gli errori sui parametri utilizzando la defnizione di standard error.
 * **Grafici:** Il programma genera grafici che mostrano i dati, la funzione interpolante e il chi-quadro in funzione dei parametri.
 
 ## Come usare il programma
 
-1. **Compilare il programma:** Utilizzare un compilatore Root / C++ (con librerie root) per compilare il codice sorgente.
+1. **Includere le librerie:** Utilizzando direttamente Root non è necessario, altrimenti includere tutte le librerie necessarie.
 2. **Creare un file di dati:** Creare un file di testo chiamato `dati_da_interpolare.txt` con i dati da interpolare, nel formato descritto sopra (ogni riga `x`, `y`, `sigma_y` distanziati da un tab e con separatore decimale un punto `.`).
 3. **Definire la funzione interpolante:** Definire, nell'apposita riga di codice, la funzione interpolante i dati utilizzando come variabile indipendente `x[i_esimo_valore]`, mentre come parametri (in numero necessario non maggiore a 3) `par1`, `par2` e `par3`.
 4. **Definire il range dei parametri:** Definire, nelle apposite righe di codice, il range di valori in cui devono essere ricercati i parametri (definire `numero_punti_iniziali=100` per un impegno computazionale medio).
-5. **Eseguire il programma:** Eseguire il programma compilato.
+5. **Eseguire il programma:** Compilare ed seguire il programma con Root.
 
 ## Requisiti
 
