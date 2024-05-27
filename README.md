@@ -26,11 +26,9 @@ Questo programma implementa un algoritmo di interpolazione a più parametri (fin
 1. **Root:** Utilizzare Root per compilare il codice.
 
 ## Esempio di file di dati
-160	0.281486702	0.010260399
-
-161	0.293361922	0.010324526
-
-162	0.325720326	0.010388654
+160	0.281486702	0.010260399<br>
+161	0.293361922	0.010324526<br>
+162	0.325720326	0.010388654<br>
 163	0.34821413	0.010452781
 164	0.370959261	0.010516909
 165	0.41469023	0.010581036
@@ -38,7 +36,7 @@ Questo programma implementa un algoritmo di interpolazione a più parametri (fin
 167	0.503660134	0.010709291
 168	0.55945482	0.010773419
 169	0.63711499	0.010837546
-170	0.737017637	0.010901674 
+170	0.737017637	0.010901674
 171	0.848795503	0.010965801
 172	0.994251243	0.011029929
 173	1.173950343	0.011094056
@@ -64,9 +62,9 @@ Questo programma implementa un algoritmo di interpolazione a più parametri (fin
 return M_PI/2 - atan((par1 * par1 - pow(2 * M_PI * x[i_esimo_valore] * 1000, 2)) / (2 * M_PI * x[i_esimo_valore] * 1000 * par2 * 2));
 
 ## Esempio range parametri
-double numero_punti_iniziali = 100;                // MODIFICABILE
-double range_min1 = 1050000;                       //
-double range_max1 = 1150000;                       //
+double numero_punti_iniziali = 100;                // MODIFICABILE<br>
+double range_min1 = 1050000;                       //<br>
+double range_max1 = 1150000;                       //<br>
 double range_min2 = 20000;                         //
 double range_max2 = 40000;                         //
 double range_min3 = 0;                             //
