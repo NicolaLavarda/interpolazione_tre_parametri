@@ -1,0 +1,10 @@
+            - name: ROOT CERN CI
+  # You may pin to the exact commit or the version.
+  # uses: MohamedElashri/rootcern-action@6233ebc32c631761c99ef12c1d2853263a2cad84
+  uses: MohamedElashri/rootcern-action@1.0
+  with:
+    # The ROOT CERN scripts to run, separated by commas
+    scripts: 
+    # The output files to check for, separated by commas
+    output_files: # optional
+          
